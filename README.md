@@ -19,4 +19,4 @@
 ## 🌐 Languages
 
 - **Français** (Natif)
-- **English** (Courant)
+- **English** (Fluent)
