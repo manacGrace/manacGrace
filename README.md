@@ -3,7 +3,7 @@
   
   <img src="calcifer.gif" width="auto">
 </div>
-[Services Repo](https://github.com/ManasseTegGbegnohou/420-414-Epreuve-Finale-Services.git)
+
 ---
 
 ### **I can use**
