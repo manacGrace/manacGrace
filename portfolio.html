@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yanis Djenadi — Portfolio</title>
+  <meta name="description" content="Portfolio de Yanis Djenadi — Support & Réseaux/Systèmes, Développement logiciel." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="../OST_IMG/26xLogo.png">
+</head> 
+<body>
+  <!-- Fond animé -->
+  <div class="bg-blobs" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">@yanis26x</div>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <nav class="nav" id="nav">
+        <a href="#about" data-link>À propos</a>
+        <a href="#skills" data-link>Compétences</a>
+        <a href="#projects" data-link>Projets</a>
+        <a href="#education" data-link>Formation</a>
+        <a href="#contact" data-link>Contact</a>
+        <span class="nav-indicator" aria-hidden="true"></span>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container" data-animate="stagger">
+      <h1 class="fx-gradient">Yanis Djenadi</h1>
+      <p class="lead">
+        <strong>Développement logiciel</strong> • <strong>Support & Réseaux/Systèmes</strong> • Étudiant en Techniques de l’informatique (Montréal, QC)
+      </p>
+      <div class="cta">
+        <a class="btn btn-primary fx-magnetic" href="../CV_Stage_Informatique.pdf" download>📄 Télécharger le CV</a>
+        <a class="btn btn-ghost fx-magnetic" href="#contact">✉️ Me contacter</a>
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="about" class="container section" data-animate="fade-up">
+      <div class="section-head">
+        <h2>Résumé professionnel</h2>
+        <p class="sub">Qui je suis & ce que je cherche</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="card">
+          <p class="p">
+            Étudiant en Techniques de l’informatique, motivé et polyvalent, avec une base solide en
+            <strong>support technique</strong>, <strong>développement</strong> et <strong>administration réseaux/systèmes</strong>.
+            Passionné par la résolution de problèmes, l’apprentissage continu et les nouvelles technologies.
+          </p>
+          <p class="p">
+            Je recherche un <strong>stage</strong> pour appliquer mes compétences, contribuer à des projets concrets
+            et approfondir mon expérience en TI.
+          </p>
+        </div>
+        <aside class="card mini">
+          <ul class="bullets">
+            <li>Montréal, QC</li>
+            <li>yanis.djenadi@hotmail.com</li>
+            <li>(438) 521-4125</li>
+            <li>@yanis26x</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section id="skills" class="container section" data-animate="fade-up">
+      <div class="section-head">
+        <h2>Compétences</h2>
+        <p class="sub">Techniques & humaines</p>
+      </div>
+
+      <div class="chips">
+        <!-- Dév -->
+        <span class="chip">Java</span>
+        <span class="chip">Python</span>
+        <span class="chip">C#</span>
+        <span class="chip">JavaScript / TypeScript</span>
+        <span class="chip">React / React Native</span>
+        <span class="chip">HTML / CSS / Tailwind</span>
+        <!-- Data -->
+        <span class="chip">MySQL</span>
+        <span class="chip">Nettoyage / pipelines (Node.js)</span>
+        <!-- Réseaux/Systèmes -->
+        <span class="chip">TCP/IP</span>
+        <span class="chip">Routeurs / Switches</span>
+        <span class="chip">Active Directory</span>
+        <span class="chip">Microsoft 365</span>
+        <span class="chip">Linux (Ubuntu/Debian)</span>
+        <span class="chip">Windows 10/11</span>
+        <span class="chip">macOS</span>
+        <!-- Outils -->
+        <span class="chip">Git / GitHub</span>
+        <span class="chip">Docker (bases)</span>
+        <span class="chip">VS Code / IntelliJ IDEA</span>
+        <span class="chip">Unity</span>
+        <!-- Soft skills -->
+        <span class="chip">Communication</span>
+        <span class="chip">Travail d’équipe</span>
+        <span class="chip">Logique & Analyse</span>
+      </div>
+
+      <!-- Barres (remplissage animé via data-progress) -->
+      <div class="bars">
+        <div class="bar">
+          <span>Support technique</span>
+          <div class="bar-track"><div class="bar-fill" data-progress="85"></div></div>
+        </div>
+        <div class="bar">
+          <span>Réseaux / Systèmes</span>
+          <div class="bar-track"><div class="bar-fill" data-progress="80"></div></div>
+        </div>
+        <div class="bar">
+          <span>Développement logiciel</span>
+          <div class="bar-track"><div class="bar-fill" data-progress="95"></div></div>
+        </div>
+        <div class="bar">
+          <span>Data & Bases</span>
+          <div class="bar-track"><div class="bar-fill" data-progress="65"></div></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PROJETS -->
+<section id="projects" class="container section" data-animate="fade-up">
+  <div class="section-head">
+    <h2>Projets réalisés</h2>
+    <p class="sub">Sélection de travaux académiques & personnels</p>
+  </div>
+
+  <ul class="projects-list">
+    <li class="project-item">
+      <h3>📱 Application mobile — 0SaKi</h3>
+      <p>App React Native faite avec Expo Go, navigation et stockage local.</p>
+      <div class="tags"><span>React Native</span><span>Expo</span></div>
+      <a href="https://github.com/yanis26x/0SaKi" target="_blank" class="btn btn-mini btn-primary">🔗 Voir sur GitHub</a>
+    </li>
+
+    <li class="project-item">
+      <h3>🧮 Calculatrice interactive</h3>
+      <p>Petite calculatrice multiplateforme en Python et C#.</p>
+      <div class="tags"><span>Python</span><span>C#</span></div>
+      <a href="https://github.com/yanis26x/calculatrice26x" target="_blank" class="btn btn-mini btn-primary">🔗 Voir sur GitHub</a>
+    </li>
+
+    <li class="project-item">
+      <h3>🧾 Générateur de QR Code</h3>
+      <p>Projet d’API en Java et Python permettant de créer des QR Codes personnalisés.</p>
+      <div class="tags"><span>Java</span><span>API</span><span>Python</span></div>
+      <a href="https://github.com/yanis26x/QRcode26x" target="_blank" class="btn btn-mini btn-primary">🔗 Voir sur GitHub</a>
+    </li>
+
+    <li class="project-item">
+      <h3>🎮 Jeu 2D — Run4UrLife</h3>
+      <p>Jeu en Unity/C# avec IA d’ennemis, collisions et gestion des niveaux.</p>
+      <div class="tags"><span>Unity</span><span>C#</span></div>
+      <a href="https://github.com/yanis26x/run4urLife26x" target="_blank" class="btn btn-mini btn-primary">🔗 Voir sur GitHub</a>
+    </li>
+
+    <li class="project-item">
+  <h3>🧩 API REST — TV-Tracker</h3>
+  <p>API Express/TypeScript avec validation par middleware, journalisation Winston et filtres Regex. Gestion CRUD complète des films et séries.</p>
+  <div class="tags"><span>Node.js</span><span>Express</span><span>TypeScript</span><span>Winston</span></div>
+  <a href="https://github.com/yanis26x/TP1-collecte" target="_blank" class="btn btn-mini btn">🔗 Voir sur GitHub</a>
+</li>
+
+<li class="project-item">
+  <h3>🎵 Sptfy-2-YTB</h3>
+  <p>pour transferer les musiques de Spotify vers YouTube.</p>
+  <div class="tags"><span>API</span><span> JavaScript</span></div>
+  <a href="https://github.com/yanis26x/Sptfy-2-YTB" target="_blank" class="btn btn-mini btn">🔗 Voir sur GitHub</a>
+</li>
+
+<li class="project-item">
+  <h3>📡 ChromeCast26x</h3>
+  <p>Media Player pour controller un ChromeCast a distance</p>
+  <div class="tags"><span>Node.js</span><span> JavaScript</span></div>
+  <a href="https://github.com/yanis26x/ChromeCast26x" target="_blank" class="btn btn-mini btn-primary">🔗 Voir sur GitHub</a>
+</li>
+
+<li class="project-item">
+  <h3>⭕❌ TicTacToe26x</h3>
+  <p>Un simple Tic Tac Toe.</p>
+  <div class="tags"><span>Python</span><span> PyGames</span></div>
+  <a href="https://github.com/yanis26x/TicTacToe26x" target="_blank" class="btn btn-mini btn-primary">🔗 Voir sur GitHub</a>
+</li>
+
+  </ul>
+</section>
+
+    <!-- FORMATION -->
+    <section id="education" class="container section" data-animate="fade-up">
+      <div class="section-head">
+        <h2>Formation</h2>
+        <p class="sub">Parcours académique</p>
+      </div>
+
+      <div class="timeline">
+        <article class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-content card">
+            <h3>DEC — Techniques de l’informatique</h3>
+            <p class="t-meta">Cégep Marie-Victorin — Montréal, QC | 2022 — Présent (fin prévue 2026)</p>
+            <p>Développement, réseaux/systèmes, support technique, bases de données.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container section" data-animate="fade-up">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p class="sub">réseaux</p>
+      </div>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:yanis.djenadi@hotmail.com">yanis.djenadi@hotmail.com</a>
+        <a class="contact-card" href="tel:+14385214125">(438) 521-4125</a>
+        <a class="contact-card" href="https://www.linkedin.com/in/yanis-djenadi-058964307/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="contact-card" href="https://github.com/yanis26x" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="contact-card" href="https://yanis26x.github.io/yanis26x/" target="_blank" rel="noreferrer">Site Web</a>
+        <div class="contact-card" style="pointer-events:none">@yanis26x</div>
+      </div>
+
+      <p class="sub" style="margin-top:12px">
+        Centres d’intérêt : Développement mobile & web, IA appliquée, cloud computing, cybersécurité, résolution de problèmes.
+      </p>
+      <p class="sub" style="margin-top:12px">
+        Langues : Francais, Anglais
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> @yanis26x — Tous droits réservés.</span>
+      <a class="mini" href="../CV_Stage_Informatique.pdf" download>CV (PDF)</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
