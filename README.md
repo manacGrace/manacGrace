@@ -1,6 +1,6 @@
 <div align="left">
   <h1>Wassup ?</h1>
-  <h3><a href="https://manacgrace.github.io/manacGrace" target="_blank"><img src="https://img.icons8.com/fluency/20/000000/external-link.png" alt="External Link" style="vertical-align: middle; margin-right: 5px;">Web portfolio</a></h3>
+  <h3>👉 <a>Web portfolio</a></h3>
   <img src="calcifer.gif" width="auto">
 </div>
 
