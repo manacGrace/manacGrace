@@ -1,12 +1,12 @@
 <div align="left">
-  <h1>Wassup ?></h1>
+  <h1>Wassup ?</h1>
   <h3><a href="https://manacgrace.github.io/manacGrace" target="_blank">Web portfolio</a></h3>
   <img src="calcifer.gif" width="auto">
 </div>
 
 ---
 
-### **I can use**
+### **I can use :**
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
@@ -16,7 +16,7 @@
 
 ---
 
-## 🌐 Langues
+## 🌐 Languages
 
-- 🇫🇷 **Français** (Natif)
-- 🇬🇧 **Anglais** (Courant)
+- **Français** (Natif)
+- **English** (Courant)
