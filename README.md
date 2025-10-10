@@ -1,7 +1,7 @@
 <div align="left">
   <h1>Wassup ?></h1>
+  <p>[My web portfolio](https://manacgrace.github.io/manacGrace)<p>
   <img src="calcifer.gif" width="auto">
-  [My web portfolio](https://manacgrace.github.io/manacGrace)
 </div>
 
 ---
