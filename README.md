@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Salut <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"></h1>
-  <h3>Étudiant en Techniques de l'informatique</h3>
+  <img src="calcifer.gif" width="auto">
 </div>
 
 ---
