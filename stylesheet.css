@@ -17,6 +17,7 @@
     /* Accent Colors */
     --accent-primary: #49c255;
     --accent-secondary: #ff2828;
+    --accent-tertiary: #939393;
     
     /* Border Colors */
     --border-subtle: rgba(220, 38, 38, 0.1);
@@ -287,7 +288,7 @@ header{
 
 .about-text h2
 {
-    color: var(--accent-secondary);
+    color: var(--accent-primary);
     margin-bottom: 1rem;
     font-size: 1.2rem;
     font-weight: 900;
@@ -305,7 +306,7 @@ header{
     padding: 1.5rem;
     background: var(--bg-main);
     border-radius: 0.5rem;
-    border-left: 4px solid var(--accent-secondary);
+    border-left: 4px solid var(--accent-tertiary);
     position: relative;
     overflow: hidden;
     transition: 0.3s;
@@ -456,6 +457,42 @@ header{
     font-size: 1.5rem;
 }
 
+/* Light mode specific styles for About section buttons */
+:root .btn-cv
+{
+    background: var(--accent-primary);
+    color: var(--text-primary);
+    border: 1px solid var(--accent-primary);
+}
+
+:root .btn-cv:hover
+{
+    background: var(--accent-secondary);
+    border-color: var(--accent-secondary);
+}
+
+:root .btn-contact
+{
+    border: 1px solid var(--accent-primary);
+}
+
+:root .btn-contact:hover
+{
+    background: var(--accent-secondary);
+    border-color: var(--accent-secondary);
+}
+
+:root .github-link
+{
+    border: 2px solid var(--accent-primary);
+}
+
+:root .github-link:hover
+{
+    background: var(--accent-secondary);
+    border-color: var(--accent-secondary);
+}
+
 .about-title
 {
     font-size: 4rem;
@@ -551,7 +588,7 @@ header{
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     font-size: 0.9rem;
-    border: 1px solid var(--accent-secondary);
+    border: 1px solid var(--accent-tertiary);
     transition: 0.3s;
     position: relative;
     overflow: hidden;
@@ -696,7 +733,7 @@ header{
 
 .project-content p
 {
-    color: var(--accent-secondary);
+    color: var(--accent-tertiary);
     margin-bottom: 1rem;
     line-height: 1.6;
 }
@@ -715,7 +752,7 @@ header{
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     font-size: 0.9rem;
-    border: 1px solid var(--accent-secondary);
+    border: 1px solid var(--accent-tertiary);
     transition: 0.3s;
     position: relative;
     overflow: hidden;
@@ -825,9 +862,9 @@ header{
     gap: 2rem;
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background: var(--accent-primary);
+    background: var(--bg-main);
     border-radius: 0.5rem;
-    border-left: 4px solid var(--accent-primary);
+    border-left: 4px solid var(--accent-tertiary);
     position: relative;
     overflow: hidden;
     transition: 0.3s;
@@ -852,7 +889,7 @@ header{
 
 .education-year
 {
-    background: var(--bg-main);
+    background: var(--accent-tertiary);
     color: var(--text-primary);
     padding: 0.5rem 1rem;
     border-radius: 0.3rem;
@@ -871,7 +908,7 @@ header{
 
 .education-content h4
 {
-    color: var(--bg-main);
+    color: var(--accent-tertiary);
     margin-bottom: 0.5rem;
     font-size: 1rem;
 }
@@ -880,6 +917,7 @@ header{
 {
     color: var(--text-primary);
     line-height: 1.6;
+    font-weight: 400;
 }
 
 /* Contact Section */
@@ -939,7 +977,7 @@ header{
 .contact-item i
 {
     font-size: 2rem;
-    color: var(--accent-secondary);
+    color: var(--accent-tertiary);
 }
 
 .contact-item h4
@@ -950,7 +988,7 @@ header{
 
 .contact-item p
 {
-    color: var(--accent-secondary);
+    color: var(--accent-tertiary);
 }
 
 .contact-form
