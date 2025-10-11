@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manassé Teg Gbegnohou</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/manacLogo.png">
+    <link rel="shortcut icon" type="image/png" href="./assets/manacLogo.png">
+    <link rel="apple-touch-icon" href="./assets/manacLogo.png">
+
     <!--Link to css-->
     <link rel="stylesheet" href="stylesheet.css">
 
@@ -18,7 +23,7 @@
     <!--navbar-->
     <header>
 
-        <a href="#" class="logo"><img src="./img/logoWebsitekrita.png" alt="">manac's</a>
+        <a href="#" class="logo"><img src="./assets/manacLogo.png" alt="">manacGrace</a>
         <div class="bx bx-menu" id="menu-icon" onclick="hideShowNavbar()"></div>
 
         <ul class="navbar">
@@ -28,6 +33,11 @@
             <li><a href="#education">Formation</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        
+        <!-- Toggle Button -->
+        <div class="theme-toggle" onclick="toggleTheme()">
+            <i class='bx bx-sun' id="theme-icon"></i>
+        </div>
 
 
 
@@ -40,7 +50,10 @@
             <h2>Développement logiciel • Back-end / Front-end • Infrastructure • Support</h2>
             <div class="about-buttons">
                 <a href="#" class="btn-cv" target="_blank">📄 Télécharger CV</a>
-                <a href="#contact" class="btn-contact">Contacter</a>
+                <a href="#contact" class="btn-contact">📩 Contact</a>
+                <a href="https://github.com/manacGrace" class="github-link" target="_blank">
+                    <i class='bx bxl-github'></i>
+                </a>
             </div>
 
             <h1>Résumé professionnel</h1>
@@ -149,7 +162,7 @@
             <div class="project-box">
                 <div class="project-content">
                     <h3>STARDESTROYER-UNITY-2D-GAME</h3>
-                    <p>STARDESTROYER, un jeu Shoot ’em Up 2D fait avec UNITY.</p>
+                    <p>STARDESTROYER, un jeu Shoot 'em Up 2D fait avec UNITY.</p>
                     <div class="project-tech">
                         <span>C#</span>
                         <span>Aseprite</span>
@@ -163,7 +176,7 @@
             <div class="project-box">
                 <div class="project-content">
                     <h3>REAL-ESTATE-AWS-SERVICES</h3>
-                    <p>Repository with the necessary compose.yaml and other files to deploy a fullstack app on AWS.</p>
+                    <p>Repository with the necessary compose.yaml and files to deploy a fullstack app on AWS.</p>
                     <div class="project-tech">
                         <span>JavaScript</span>
                         <span>Java</span>
@@ -203,9 +216,9 @@
 
         <div class="education-container">
             <div class="education-item">
-                <div class="education-year">2023 - 2024</div>
+                <div class="education-year">2023 - 2026</div>
                 <div class="education-content">
-                    <h3>DEC — Techniques de l’informatique</h3>
+                    <h3>DEC — Techniques de l'informatique</h3>
                     <h4>Cégep Marie-Victorin — Montréal, QC</h4>
                     <p>Développement front-end/back-end, web/mobile, réseaux/infonuagique, support
                         technique, bases de données, platformes embarquées, jeux vidéo.</p>
@@ -250,17 +263,18 @@
             </div>
 
             <div class="contact-form">
-                <form>
+                <form id="contact-form" name="contact" method="POST" data-netlify="true">
                     <div class="form-group">
-                        <input type="text" placeholder="Votre nom" required>
+                        <input type="text" name="name" placeholder="Votre nom" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Votre email" required>
+                        <input type="email" name="email" placeholder="Votre email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Votre message" rows="5" required></textarea>
+                        <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn">Envoyer</button>
+                    
+                    <button type="submit" class="btn btn-contact"><i class='bx bx-envelope'></i></button>
                 </form>
             </div>
         </div>
@@ -269,7 +283,7 @@
     <!--Footer-->
     <footer class="footer">
         <div class="footer-content">
-            <p>© 2025 @manac's — Tous droits réservés.</p>
+            <p>© 2025 Manassé Teg Gbegnohou — Tous droits réservés.</p>
         </div>
     </footer>
 
