@@ -1,7 +1,7 @@
 <div align="left">
   <h1>HI !</h1>
   <h3>👉 <a href="https://manacgrace.github.io/manacGrace" target="_blank">MY WEB PAGE</a></h3>
-  <h3>🎮 <a href="https://manacgrace.github.io/STARDESTROYER-UNITY-2D-WEB" target="_blank">MY WEB GAME</a></h3>
+  <h3>🎮 <a href="https://manacgrace.github.io/STARDESTROYER" target="_blank">MY WEB GAME</a></h3>
   <img src="assets/calcifer.gif" width="auto" alt="Calcifer animation">
 </div>
 
