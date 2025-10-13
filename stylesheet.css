@@ -1067,15 +1067,16 @@ header{
 }
 
 .success-message {
-    color: var(--text-primary);
+    color: var(--accent-tertiary);
     margin-bottom: 2rem;
     line-height: 1.6;
+
 }
 
 .back-btn {
     display: inline-block;
     background: var(--accent-primary);
-    color: var(--text-inverse);
+    color: var(--text-primary);
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     text-decoration: none;
@@ -1086,6 +1087,8 @@ header{
 .back-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px var(--glow-button);
+    background: var(--accent-secondary);
+    border-color: var(--accent-secondary);
 }
 
 /* Footer */
