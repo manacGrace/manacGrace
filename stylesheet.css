@@ -1035,6 +1035,59 @@ header{
     border-color: var(--text-secondary);
 }
 
+/* Success page styles */
+.success-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.success-content {
+    background: var(--bg-main);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px var(--shadow-soft);
+    max-width: 500px;
+    width: 100%;
+}
+
+.success-icon {
+    font-size: 4rem;
+    color: var(--accent-primary);
+    margin-bottom: 1rem;
+}
+
+.success-title {
+    font-size: 2rem;
+    color: var(--text-heading);
+    margin-bottom: 1rem;
+}
+
+.success-message {
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.back-btn {
+    display: inline-block;
+    background: var(--accent-primary);
+    color: var(--text-inverse);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--glow-button);
+}
+
 
 
 /* Footer */
