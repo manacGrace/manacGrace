@@ -37,30 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Form submission handling with redirect
-document.addEventListener('DOMContentLoaded', function() {
-    // Check if we're on a success page (Netlify adds ?success=true to URL)
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('success') === 'true') {
-        window.location.href = 'success.html';
-        return;
-    }
-    
-    const form = document.getElementById('contact-form');
-    
-    if (form) {
-        form.addEventListener('submit', function(e) {
-            // Show loading state
-            const submitBtn = form.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
-            submitBtn.innerHTML = '<i class="bx bx-loader-alt bx-spin"></i> Envoi en cours...';
-            submitBtn.disabled = true;
-            
-            // Let Netlify handle the form submission
-            // The page will reload with ?success=true parameter
-        });
-    }
-});
+// Form submission is now handled by Netlify Forms
+// No JavaScript needed - Netlify handles everything automatically
 
 // Active navigation link based on scroll position
 document.addEventListener('DOMContentLoaded', function() {

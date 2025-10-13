@@ -33,7 +33,7 @@
             <li><a href="#education">Formation</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        
+
         <!-- Toggle Button -->
         <div class="theme-toggle" onclick="toggleTheme()">
             <i class='bx bx-sun' id="theme-icon"></i>
@@ -152,7 +152,7 @@
                     <h3>BACKEND-APP-DE-SUIVI-DE-SERIES-FILMS</h3>
                     <p>Prototype d'API RESTful pour la gestion d'une bibliothèque personnelle de contenus
                         audiovisuels (films, séries, mini-séries).
-                        </p>
+                    </p>
                     <div class="project-tech">
                         <span>TypeScript</span>
                         <span>Postman</span>
@@ -177,8 +177,7 @@
                     </div>
                     <a href="https://github.com/manacGrace/STARDESTROYER-UNITY-2D-GAME.git" class="project-btn"
                         target="_blank">Voir le GitHub</a>
-                        <a href="https://manacgrace.github.io/STARDESTROYER" class="project-btn"
-                        target="_blank">Jouer</a>
+                    <a href="https://manacgrace.github.io/STARDESTROYER" class="project-btn" target="_blank">Jouer</a>
                 </div>
             </div>
 
@@ -274,12 +273,10 @@
             </div>
 
             <div class="contact-form">
-                <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                    <!-- Hidden field for bot protection -->
-                    <input type="hidden" name="bot-field" />
-                    
-                    <!-- Hidden field to help Netlify identify the form -->
-                    <input type="hidden" name="form-name" value="contact" />
+                <form id="contact-form" name="contact" method="POST" data-netlify="true" action="success.html">
+                    <!-- Required hidden input for Netlify -->
+                    <input type="hidden" name="form-name" value="contact">
+
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Votre nom" required>
                     </div>
@@ -289,10 +286,13 @@
                     <div class="form-group">
                         <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
                     </div>
-                    
-                    <button type="submit" class="btn btn-contact"><i class='bx bx-envelope'></i></button>
+
+                    <button type="submit" class="btn btn-contact">
+                        <i class='bx bx-envelope'></i>
+                    </button>
                 </form>
             </div>
+
         </div>
     </section>
 
