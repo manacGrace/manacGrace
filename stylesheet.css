@@ -8,12 +8,14 @@
     --bg-header: rgba(255, 255, 255, 0.8);
     --bg-mobile-nav: rgba(255, 255, 255, 0.95);
     --bg-hover: #e6e6e6;
+    --bg-linkedin: #0a66c2;
     
     /* Text Colors */
     --text-primary: #000000;
     --text-heading: #000000;
     --text-inverse: #ffffff;
     --text-secondary: #c2c2c2;
+    --text-linkedin: #ffffff;
     
     /* Accent Colors */
     --accent-primary: #49c255;
@@ -22,6 +24,7 @@
     
     /* Border Colors */
     --border-subtle: rgba(220, 38, 38, 0.1);
+
     
     /* Shadow Colors */
     --shadow-soft: rgba(0, 0, 0, 0.2);
@@ -32,6 +35,7 @@
     /* Glow Effects */
     --glow-accent: rgba(220, 38, 38, 0.2);
     --glow-button: rgba(220, 38, 38, 0.3);
+
 }
 
 /* Light Mode Variables */
@@ -225,7 +229,6 @@ header{
 .btn
 {
     padding: 0.5rem 1rem;
-    border: 0.15rem solid var(--accent-primary);
     border-radius: 0.5rem;
     color: var(--text-primary);
     background: var(--accent-primary);
@@ -408,17 +411,20 @@ header{
 .btn-contact
 {
     display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background: var(--bg-main);
+    background: var(--accent-tertiary);
     color: var(--text-primary);
     text-decoration: none;
     border-radius: 0.5rem;
     font-size: 1rem;
     font-weight: 500;
     transition: 0.3s;
-    border: 1px solid var(--accent-secondary);
     position: relative;
     overflow: hidden;
+}
+
+.btn-contact-0
+{
+    padding: 0.8rem 1.5rem;
 }
 
 .btn-contact::before
@@ -440,7 +446,7 @@ header{
 
 .btn-contact:hover
 {
-    background: var(--accent-primary);
+    background: var(--accent-secondary);
     border-color: var(--accent-primary);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px var(--glow-button);
@@ -455,11 +461,11 @@ header{
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    background: var(--bg-main);
-    color: var(--text-primary);
+    background: var(--text-primary);
+    color: var(--text-inverse);
     text-decoration: none;
     transition: 0.3s;
-    border: 2px solid var(--accent-secondary);
+    border: 2px solid var(--text-primary);
 }
 
 .github-link:hover
@@ -467,11 +473,41 @@ header{
     background: var(--accent-primary);
     border-color: var(--accent-primary);
     color: var(--bg-main);
-    transform: translateY(-2px) scale(1.1);
+    transform: translateY(-2px) scale(1.05);
     box-shadow: 0 4px 12px var(--glow-accent);
 }
 
 .github-link i
+{
+    font-size: 1.5rem;
+}
+
+/* LinkedIn Link Styling */
+.linkedin-link
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background: var(--bg-linkedin);
+    color: var(--text-linkedin);
+    text-decoration: none;
+    transition: 0.3s;
+    border: 2px solid var(--bg-linkedin);
+}
+
+.linkedin-link:hover
+{
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
+    color: var(--bg-main);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 4px 12px var(--glow-accent);
+}
+
+.linkedin-link i
 {
     font-size: 1.5rem;
 }
@@ -490,23 +526,13 @@ header{
     border-color: var(--accent-secondary);
 }
 
-:root .btn-contact
-{
-    border: 1px solid var(--accent-primary);
-}
-
-:root .btn-contact:hover
+:root .github-link:hover
 {
     background: var(--accent-secondary);
     border-color: var(--accent-secondary);
 }
 
-:root .github-link
-{
-    border: 2px solid var(--accent-primary);
-}
-
-:root .github-link:hover
+:root .linkedin-link:hover
 {
     background: var(--accent-secondary);
     border-color: var(--accent-secondary);
@@ -961,8 +987,16 @@ header{
 
 .contact-item i
 {
-    font-size: 2rem;
-    color: var(--accent-tertiary);
+    color: var(--text-primary);
+}
+
+.contact-item .bxl-linkedin
+{
+    color: var(--text-linkedin);
+}
+.contact-item .bxl-github
+{
+    color: var(--bg-main);
 }
 
 .contact-item h4
@@ -974,6 +1008,22 @@ header{
 .contact-item p
 {
     color: var(--accent-tertiary);
+}
+
+.contact-item a
+{
+    color: var(--accent-tertiary);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+.contact-social-links
+{
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .contact-form
