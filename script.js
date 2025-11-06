@@ -177,7 +177,7 @@ const translations = {
             downloadCV: '📄 Download CV',
             contact: '📩 Contact',
             professionalSummary: 'Professional Summary',
-            description1: 'Computer Science Techniques student, motivated and versatile, with a solid foundation in front-end and back-end development, networking, cloud computing, and IT support. Passionate about continuous learning and solving technical problems.',
+            description1: 'Computer Science Technology student, motivated and versatile, with a solid foundation in front-end and back-end development, networking, cloud computing, and IT support. Passionate about continuous learning and solving technical problems.',
             description2: 'Seeking an internship to apply my skills, contribute to concrete projects, and deepen my experience in development, networking, and information technologies.'
         },
         skills: {
@@ -204,7 +204,7 @@ const translations = {
         education: {
             title: 'EDUCATION',
             subtitle: 'My Academic Journey',
-            degree: 'DEC — Computer Science Techniques | 2023 - 2026',
+            degree: 'DEC — Computer Science Technology | 2023 - 2026',
             school: 'Cégep Marie-Victorin — Montréal, QC',
             description: 'Front-end/back-end development, web/mobile, networking/cloud computing, IT support, databases, embedded platforms, video games.'
         },
