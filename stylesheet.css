@@ -20,7 +20,7 @@
     /* Accent Colors */
     --accent-primary: #49c255;
     --accent-secondary: #ff2828;
-    --accent-tertiary: #939393;
+    --accent-tertiary: #898989;
     
     /* Border Colors */
     --border-subtle: rgba(220, 38, 38, 0.1);
@@ -41,7 +41,7 @@
 /* Light Mode Variables */
 .dark-mode {
     /* Background Colors */
-    --bg-main: #111111;
+    --bg-main: #121212;
     --bg-header: rgba(11, 11, 11, 0.8);
     --bg-mobile-nav: rgba(17, 17, 17, 0.95);
     --bg-hover: #1a1a1a;
@@ -50,11 +50,12 @@
     --text-primary: #c4bebe;
     --text-heading: #ffffff;
     --text-inverse: #000000;
-    --text-secondary: #4a4a4a;
+    --text-secondary: #222222;
     
     /* Accent Colors */
     --accent-primary: #3e4d32;
     --accent-secondary: #6d7865;
+    --accent-tertiary: #494949;
     
     /* Border Colors */
     --border-subtle: rgba(193, 196, 190, 0.1);
@@ -182,7 +183,6 @@ header{
     color: var(--text-primary);
     cursor: pointer;
     transition: 0.3s;
-    margin-left: 1rem;
     position: relative;
     overflow: hidden;
 }
@@ -215,6 +215,62 @@ header{
 {
     font-size: 1.2rem;
     transition: 0.3s;
+}
+
+/* Language Toggle Button */
+.language-toggle
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    min-width: 3.5rem;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    background: var(--accent-primary);
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    padding: 0 0.8rem;
+}
+
+.language-toggle::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, var(--overlay-light), transparent);
+    transition: left 0.5s;
+}
+
+.language-toggle:hover::before
+{
+    left: 100%;
+}
+
+.language-toggle:hover
+{
+    background: var(--accent-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--glow-accent);
+}
+
+.language-toggle i
+{
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.language-toggle #language-text
+{
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
 }
 
 /* Portfolio specific styles */
@@ -309,7 +365,7 @@ header{
 {
     margin: 1rem 0;
     padding: 1.5rem;
-    background: var(--bg-main);
+    background: var(--bg-header);
     border-radius: 0.5rem;
     border-left: 4px solid var(--accent-tertiary);
     position: relative;
@@ -411,7 +467,7 @@ header{
 .btn-contact
 {
     display: inline-block;
-    background: var(--accent-tertiary);
+    background: var(--text-secondary);
     color: var(--text-primary);
     text-decoration: none;
     border-radius: 0.5rem;
@@ -712,7 +768,7 @@ header{
 
 .project-box
 {
-    background: var(--bg-main);
+    background: var(--bg-header);
     border-radius: 0.5rem;
     overflow: hidden;
     transition: 0.3s;
@@ -868,7 +924,7 @@ header{
     gap: 2rem;
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background: var(--bg-main);
+    background: var(--bg-header);
     border-radius: 0.5rem;
     border-left: 4px solid var(--accent-tertiary);
     position: relative;
@@ -1028,7 +1084,6 @@ header{
 
 .contact-form
 {
-    background: var(--bg-main);
     padding: 2rem;
     border-radius: 0.5rem;
 }
@@ -1057,9 +1112,9 @@ header{
 {
     width: 100%;
     padding: 1rem;
-    border: 1px solid var(--text-secondary);
     border-radius: 0.3rem;
-    background: var(--text-secondary);
+    background: var(--bg-header);
+    border: 1px solid var(--accent-tertiary);
     color: var(--text-primary);
     font-size: 1rem;
     transition: 0.3s;
@@ -1243,6 +1298,25 @@ header{
     .theme-toggle i
     {
         font-size: 1rem;
+    }
+    
+    .language-toggle
+    {
+        margin-left: 0.5rem;
+        min-width: 2.5rem;
+        height: 2rem;
+        padding: 0 0.5rem;
+        gap: 0.2rem;
+    }
+    
+    .language-toggle i
+    {
+        font-size: 0.9rem;
+    }
+    
+    .language-toggle #language-text
+    {
+        font-size: 0.7rem;
     }
     
     .skills-tags

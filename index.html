@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" id="html-lang">
 
 <head>
   <meta charset="UTF-8" />
@@ -25,12 +25,18 @@
     <div class="bx bx-menu" id="menu-icon" onclick="hideShowNavbar()"></div>
 
     <ul class="navbar">
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#skills">Compétences</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#education">Formation</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about" data-i18n="nav.about">À propos</a></li>
+      <li><a href="#skills" data-i18n="nav.skills">Compétences</a></li>
+      <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
+      <li><a href="#education" data-i18n="nav.education">Formation</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
     </ul>
+
+    <!-- Toggle Button Language -->
+    <div class="language-toggle" onclick="toggleLanguage()">
+      <i class="bx bx-world" id="language-icon"></i>
+      <span id="language-text">EN</span>
+    </div>
 
     <!-- Toggle Button -->
     <div class="theme-toggle" onclick="toggleTheme()">
@@ -42,13 +48,13 @@
   <section class="about" id="about">
     <div class="about-text">
       <span class="about-title">Manassé Teg Gbegnohou</span>
-      <h2>
+      <h2 data-i18n="about.subtitle">
         Développement logiciel full-stack • Infrastructure •
         Soutien
       </h2>
       <div class="about-buttons">
-        <a href="./assets/ManasséTegGbegnohou.pdf" class="btn-cv" target="_blank">📄 Télécharger CV</a>
-        <a href="#contact" class="btn-contact btn-contact-0">📩 Contact</a>
+        <a href="./assets/ManasséTegGbegnohou.pdf" class="btn-cv" target="_blank" data-i18n="about.downloadCV">📄 Télécharger CV</a>
+        <a href="#contact" class="btn-contact btn-contact-0" data-i18n="about.contact">📩 Contact</a>
         <a href="https://www.linkedin.com/in/manassé-teg-gbegnohou-70394a394/" class="linkedin-link" target="_blank">
           <i class="bx bxl-linkedin"></i>
         </a>
@@ -58,15 +64,15 @@
 
       </div>
 
-      <h1>Résumé professionnel</h1>
+      <h1 data-i18n="about.professionalSummary">Résumé professionnel</h1>
       <div class="about-description">
-        <p>
+        <p data-i18n="about.description1">
           Étudiant en Techniques de l'informatique, motivé et polyvalent,
           possédant une solide base en développement front-end et back-end, en
           réseaux, en infonuagique et en soutien informatique. Passionné par
           l'apprentissage continu et la résolution de problèmes techniques.
         </p>
-        <p>
+        <p data-i18n="about.description2">
           À la recherche d'un stage afin de mettre en pratique mes
           compétences, contribuer à des projets concrets et approfondir mon
           expérience en développement, en réseaux et en technologies de
@@ -79,8 +85,8 @@
   <!--Skills-->
   <section class="skills" id="skills">
     <div class="skills-text">
-      <span class="skills-title">COMPÉTENCES</span>
-      <h1>Techniques & humaines</h1>
+      <span class="skills-title" data-i18n="skills.title">COMPÉTENCES</span>
+      <h1 data-i18n="skills.subtitle">Techniques & humaines</h1>
     </div>
 
     <div class="skills-tags">
@@ -93,7 +99,7 @@
       <div class="skill-tag">JavaScript</div>
       <div class="skill-tag">TypeScript</div>
       <div class="skill-tag">VMware</div>
-      <div class="skill-tag">Machines virtuels</div>
+      <div class="skill-tag" data-i18n="skills.virtualMachines">Machines virtuels</div>
       <div class="skill-tag">React / React Native</div>
       <div class="skill-tag">HTML / CSS</div>
       <div class="skill-tag">Tailwind CSS</div>
@@ -103,10 +109,10 @@
       <div class="skill-tag">MongoDB</div>
       <div class="skill-tag">Mapbox GL</div>
       <div class="skill-tag">Node.js</div>
-      <div class="skill-tag">Chromium Extensions</div>
+      <div class="skill-tag" data-i18n="skills.chromiumExtensions">Chromium Extensions</div>
       <div class="skill-tag">Express</div>
       <div class="skill-tag">TCP / IP</div>
-      <div class="skill-tag">Routeurs / Concentrateurs</div>
+      <div class="skill-tag" data-i18n="skills.routersHubs">Routeurs / Concentrateurs</div>
       <div class="skill-tag">Raspberry Pi</div>
       <div class="skill-tag">GPIO</div>
       <div class="skill-tag">AWS</div>
@@ -118,10 +124,10 @@
       <div class="skill-tag">Docker</div>
       <div class="skill-tag">VS Code / IntelliJ IDEA</div>
       <div class="skill-tag">Unity</div>
-      <div class="skill-tag">Communication</div>
-      <div class="skill-tag">Travail d'équipe</div>
-      <div class="skill-tag">Logique & Analyse</div>
-      <div class="skill-tag">Résolution de problèmes</div>
+      <div class="skill-tag" data-i18n="skills.communication">Communication</div>
+      <div class="skill-tag" data-i18n="skills.teamwork">Travail d'équipe</div>
+      <div class="skill-tag" data-i18n="skills.logicAnalysis">Logique & Analyse</div>
+      <div class="skill-tag" data-i18n="skills.problemSolving">Résolution de problèmes</div>
     </div>
 
     <!-- <div class="skills-progress">
@@ -158,15 +164,15 @@
   <!--Projects-->
   <section class="projects" id="projects">
     <div class="projects-text">
-      <span class="projects-title">PROJETS</span>
-      <h1>Mes réalisations récentes</h1>
+      <span class="projects-title" data-i18n="projects.title">PROJETS</span>
+      <h1 data-i18n="projects.subtitle">Mes réalisations récentes</h1>
     </div>
 
     <div class="projects-container">
       <div class="project-box">
         <div class="project-content">
           <h3>REAL-ESTATE-AWS</h3>
-          <p>
+          <p data-i18n="projects.realEstateDesc">
             Une application web immobilière full-stack déployée sur AWS EC2.
             Utilisation du concept "Infrastructure As Code" avec Terraform.
           </p>
@@ -185,14 +191,13 @@
             <span>Traefik</span>
             <span>Mapbox GL </span>
           </div>
-          <a href="https://github.com/manacGrace/REAL-ESTATE-AWS.git" class="project-btn" target="_blank">Voir le
-            GitHub</a>
+          <a href="https://github.com/manacGrace/REAL-ESTATE-AWS.git" class="project-btn" target="_blank" data-i18n="projects.viewGitHub">Voir le GitHub</a>
         </div>
       </div>
       <div class="project-box">
         <div class="project-content">
           <h3>PopupGPT</h3>
-          <p>
+          <p data-i18n="projects.popupGPTDesc">
             Une extension de navigateur Chromium qui offre une assistance à
             l'écriture grâce à ChatGPT, via une fenêtre popup.
           </p>
@@ -202,29 +207,28 @@
             <span>Tailwind CSS</span>
             <span>HTML</span>
           </div>
-          <a href="https://github.com/manacGrace/PopupGPT.git" class="project-btn" target="_blank">Voir le GitHub</a>
+          <a href="https://github.com/manacGrace/PopupGPT.git" class="project-btn" target="_blank" data-i18n="projects.viewGitHub">Voir le GitHub</a>
         </div>
       </div>
 
       <div class="project-box">
         <div class="project-content">
           <h3>STARDESTROYER-UNITY-2D-GAME</h3>
-          <p>STARDESTROYER, un jeu Shoot 'em Up 2D fait avec UNITY.</p>
+          <p data-i18n="projects.starDestroyerDesc">STARDESTROYER, un jeu Shoot 'em Up 2D fait avec UNITY.</p>
           <div class="project-tech">
             <span>C#</span>
             <span>Unity</span>
             <span>Aseprite</span>
           </div>
-          <a href="https://github.com/manacGrace/STARDESTROYER.git" class="project-btn" target="_blank">Voir le
-            GitHub</a>
-          <a href="https://manacgrace.github.io/STARDESTROYER" class="project-btn" target="_blank">Jouer</a>
+          <a href="https://github.com/manacGrace/STARDESTROYER.git" class="project-btn" target="_blank" data-i18n="projects.viewGitHub">Voir le GitHub</a>
+          <a href="https://manacgrace.github.io/STARDESTROYER" class="project-btn" target="_blank" data-i18n="projects.play">Jouer</a>
         </div>
       </div>
 
       <div class="project-box">
         <div class="project-content">
           <h3>BACKEND-APP-DE-SUIVI-DE-SERIES-FILMS</h3>
-          <p>
+          <p data-i18n="projects.backendDesc">
             Prototype d'API RESTful pour la gestion d'une bibliothèque
             personnelle de contenus audiovisuels (films, séries, mini-séries).
           </p>
@@ -236,7 +240,7 @@
             <span>JSON Web Token</span>
           </div>
           <a href="https://github.com/manacGrace/BACKEND-APP-DE-SUIVI-DE-SERIES-FILMS.git" class="project-btn"
-            target="_blank">Voir le GitHub</a>
+            target="_blank" data-i18n="projects.viewGitHub">Voir le GitHub</a>
         </div>
       </div>
     </div>
@@ -245,17 +249,17 @@
   <!--Education-->
   <section class="education" id="education">
     <div class="education-text">
-      <span class="education-title">FORMATION</span>
-      <h1>Mon parcours académique</h1>
+      <span class="education-title" data-i18n="education.title">FORMATION</span>
+      <h1 data-i18n="education.subtitle">Mon parcours académique</h1>
     </div>
 
     <div class="education-container">
       <div class="education-item">
         <!-- <div class="education-year">2023 - 2026</div> -->
         <div class="education-content">
-          <h3>DEC — Techniques de l'informatique | 2023 - 2026</h3>
-          <h4>Cégep Marie-Victorin — Montréal, QC</h4>
-          <p>
+          <h3 data-i18n="education.degree">DEC — Techniques de l'informatique | 2023 - 2026</h3>
+          <h4 data-i18n="education.school">Cégep Marie-Victorin — Montréal, QC</h4>
+          <p data-i18n="education.description">
             Développement front-end/back-end, web/mobile,
             réseaux/infonuagique, soutien informatique, bases de données,
             platformes embarquées, jeux vidéo.
@@ -268,9 +272,9 @@
   <!--Contact-->
   <section class="contact" id="contact">
     <div class="contact-text">
-      <span class="contact-title">CONTACT</span>
-      <h1>Travaillons ensemble</h1>
-      <p>Langues : Français, Anglais</p>
+      <span class="contact-title" data-i18n="contact.title">CONTACT</span>
+      <h1 data-i18n="contact.subtitle">Travaillons ensemble</h1>
+      <p data-i18n="contact.languages">Langues : Français, Anglais</p>
     </div>
 
     <div class="contact-container">
@@ -278,7 +282,7 @@
         <div class="contact-item">
           <i class="bx bx-envelope"></i>
           <div>
-            <h4>Email</h4>
+            <h4 data-i18n="contact.emailLabel">Email</h4>
             <a href="mailto:mtgbegnohou@gmail.com">mtgbegnohou@gmail.com</a>
           </div>
         </div>
@@ -286,7 +290,7 @@
         <div class="contact-item">
           <i class="bx bx-phone"></i>
           <div>
-            <h4>Téléphone</h4>
+            <h4 data-i18n="contact.phoneLabel">Téléphone</h4>
             <a href="tel:+14384671480">+1 (438) 467-1480</a>
           </div>
         </div>
@@ -294,7 +298,7 @@
         <div class="contact-item">
           <i class="bx bx-map"></i>
           <div>
-            <h4>Localisation</h4>
+            <h4 data-i18n="contact.locationLabel">Localisation</h4>
             <p>Montréal, Québec, Canada</p>
           </div>
         </div>
@@ -302,9 +306,10 @@
         <div class="contact-item contact-social">
           <i class="bx bx-share-alt"></i>
           <div>
-            <h4>Réseaux sociaux</h4>
+            <h4 data-i18n="contact.socialLabel">Réseaux sociaux</h4>
             <div class="contact-social-links">
-              <a href="https://www.linkedin.com/in/manassé-teg-gbegnohou-70394a394/" class="linkedin-link" target="_blank">
+              <a href="https://www.linkedin.com/in/manassé-teg-gbegnohou-70394a394/" class="linkedin-link"
+                target="_blank">
                 <i class="bx bxl-linkedin"></i>
               </a>
               <a href="https://github.com/manacGrace" class="github-link" target="_blank">
@@ -318,13 +323,13 @@
       <div class="contact-form">
         <form id="contact-form" name="webPortfolioContact" method="POST" data-netlify="true" action="/success">
           <div class="form-group">
-            <input type="text" name="name" placeholder="Votre nom" required />
+            <input type="text" name="name" data-i18n-placeholder="contact.formName" placeholder="Votre nom" required />
           </div>
           <div class="form-group">
-            <input type="email" name="email" placeholder="Votre email" required />
+            <input type="email" name="email" data-i18n-placeholder="contact.formEmail" placeholder="Votre email" required />
           </div>
           <div class="form-group">
-            <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+            <textarea name="message" data-i18n-placeholder="contact.formMessage" placeholder="Votre message" rows="5" required></textarea>
           </div>
 
           <button type="submit" class="btn btn-contact">
@@ -338,7 +343,7 @@
   <!--Footer-->
   <footer class="footer">
     <div class="footer-content">
-      <p>© 2025 Manassé Teg Gbegnohou — Tous droits réservés.</p>
+      <p data-i18n="footer.copyright">© 2025 Manassé Teg Gbegnohou — Tous droits réservés.</p>
     </div>
   </footer>
 
