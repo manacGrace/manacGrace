@@ -134,7 +134,7 @@ const translations = {
         projects: {
             title: 'PROJETS',
             subtitle: 'Mes réalisations récentes',
-            realEstateDesc: 'Une application web immobilière full-stack déployée sur AWS EC2. Utilisation du concept "Infrastructure As Code" avec Terraform.',
+            realEstateDesc: 'Application web immobilière full-stack que j\'ai conçue et dont j\'ai automatisé le déploiement sur AWS EC2, en appliquant le concept d\'Infrastructure as Code avec Terraform.',
             popupGPTDesc: 'Une extension de navigateur Chromium qui offre une assistance à l\'écriture grâce à ChatGPT, via une fenêtre popup.',
             starDestroyerDesc: 'STARDESTROYER, un jeu Shoot \'em Up 2D fait avec UNITY.',
             backendDesc: 'Prototype d\'API RESTful pour la gestion d\'une bibliothèque personnelle de contenus audiovisuels (films, séries, mini-séries).',
@@ -194,7 +194,7 @@ const translations = {
         projects: {
             title: 'PROJECTS',
             subtitle: 'My Recent Work',
-            realEstateDesc: 'A full-stack real estate web application deployed on AWS EC2. Using the "Infrastructure As Code" concept with Terraform.',
+            realEstateDesc: 'A full-stack real estate web application that I designed and automated the deployment of on AWS EC2, applying the Infrastructure-as-Code approach with Terraform.',
             popupGPTDesc: 'A powerful browser extension that brings ChatGPT\'s writing assistance directly to your popup!',
             starDestroyerDesc: 'STARDESTROYER, a 2D Shoot \'em Up game made with UNITY.',
             backendDesc: 'RESTful API prototype for managing a personal library of audiovisual content (movies, series, mini-series).',
