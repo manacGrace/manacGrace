@@ -286,7 +286,7 @@ function updateLanguage(lang) {
     // Update CV link href based on language
     const cvLink = document.getElementById('cv-link');
     if (cvLink) {
-        cvLink.setAttribute('href', `./assets/ManasséTegGbegnohou_${lang}.pdf`);
+        cvLink.setAttribute('href', `./assets/cv_${lang}/ManasséTegGbegnohou.pdf`);
     }
 }
 
