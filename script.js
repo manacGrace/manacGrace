@@ -37,9 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Form submission is now handled by Netlify Forms
-// No JavaScript needed - Netlify handles everything automatically
-
 // Active navigation link based on scroll position
 document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('section[id]');
@@ -285,6 +282,12 @@ function updateLanguage(lang) {
             element.setAttribute('placeholder', translation);
         }
     });
+    
+    // Update CV link href based on language
+    const cvLink = document.getElementById('cv-link');
+    if (cvLink) {
+        cvLink.setAttribute('href', `./assets/ManasséTegGbegnohou_${lang}.pdf`);
+    }
 }
 
 // Load saved language on page load
